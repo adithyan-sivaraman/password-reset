@@ -10,7 +10,7 @@ This project is an api endpoint for the Vite app is designed to allow users to r
 
 3. Install the project dependencies using npm install
 
-4. Clone front end user interface from this (repository)[https://github.com/adithyan-sivaraman/password-reset-frontend] 
+4. Clone front end Vite App  from this [repository](https://github.com/adithyan-sivaraman/password-reset-frontend)
 
 ## Configuration
 
