@@ -13,7 +13,7 @@ const router = express.Router();
 router.post('/validate/email', async (req, res) => {
     const { email } = req.body;
     const users = await userSchema.findOne({ email: email });
-    const isResetKey = users.resetkey || "";
+    const isResetKey = users ? users.resetkey : "";
 
     if (!users) {
         setTimeout(() => {
