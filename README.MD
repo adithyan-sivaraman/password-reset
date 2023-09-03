@@ -10,11 +10,23 @@ This project is an api endpoint for the Vite app is designed to allow users to r
 
 3. Install the project dependencies using npm install
 
-4. Clone front end Vite App  from this [repository](https://github.com/adithyan-sivaraman/password-reset-frontend)
+4. Clone front end Vite App from this [repository](https://github.com/adithyan-sivaraman/password-reset-frontend)
 
 ## Configuration
 
-To configure the backend endpoint, you'll need to modify the `config.js`
+1.  To configure the backend endpoint, you'll need to modify the `config.js`
+
+2.  Create .env file and set following environment variables 
+     - for local mongo db
+       - MONGO_DB
+       - MONGO_URL
+     - for cloud mongo db
+       - MONGO_USER
+       - MONGO_PASSWORD
+       - MONGO_CLUSTER
+    - nodemalier credentials
+      - USER_EMAIL
+      - USER_PWD
 
 ## Running the App
 
