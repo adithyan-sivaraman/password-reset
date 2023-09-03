@@ -1,6 +1,8 @@
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 import crypto from 'crypto';
+import {frontEndUrl} from '../Config.js'
+
 dotenv.config();
 
 const pass = process.env.USER_PWD;
@@ -26,14 +28,14 @@ const sendEmail = async (email) => {
             Hello User
             This is an system generated email for password reset
             Please click on link or paste it in browser
-            Link = http://localhost:5173/?reset=${resetKey}
+            Link = ${frontEndUrl}/?reset=${resetKey}
             `
 
         const html = `
             <p><b>Hello User</b></p>
             <p>This is an system generated email for password reset</p>
             <p>Please click on link or paste it in browser</p>
-            <a href="http://localhost:5173/?reset=${resetKey}">Reset Link</a>
+            <a href="${frontEndUrl}/?reset=${resetKey}">Reset Link</a>
             `
         const response = await transport.sendMail({
             from: user,
